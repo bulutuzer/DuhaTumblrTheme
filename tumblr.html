@@ -1,0 +1,1626 @@
+<!--
+  Duha Tumblr Theme v1.1
+  by Bulut Üzer [http://www.bulutuzer.com/]
+  Available for free. Feel free to use and alter, but please give credit.
+-->
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>{Title}</title>
+	{block:Description}
+	<meta name="description" content="{MetaDescription}"/>
+	{/block:Description}
+  
+
+<!-- DEFAULT IMAGE -->
+	<meta name="image:Background" content="http://static.tumblr.com/lymzvo4/Sotmimqxm/bg.png"/>
+	<meta name="image:socialTumblr" content="http://static.tumblr.com/lymzvo4/2zSmimrgd/thumb.png"/>
+	<meta name="image:socialTumblrHover" content="http://static.tumblr.com/lymzvo4/I1Zmimrgn/thumb-hover.png"/>
+	<meta name="image:socialTwit" content="http://static.tumblr.com/lymzvo4/O5mmimrgv/twit.png"/>
+	<meta name="image:socialTHover" content="http://static.tumblr.com/lymzvo4/O5mmimrgv/twit-hover.png"/>
+	<meta name="image:socialFace" content="http://static.tumblr.com/lymzvo4/qcmmimr5c/face.png"/>
+	<meta name="image:socialFbHover" content="http://static.tumblr.com/lymzvo4/qcmmimr5c/face-hover.png"/>
+	<meta name="image:socialFf" content="http://static.tumblr.com/lymzvo4/Bhkmimr6w/friend.png"/>
+	<meta name="image:socialFHover" content="http://static.tumblr.com/lymzvo4/Bhkmimr6w/friend-hover.png"/>
+	<meta name="image:socialFlickr" content="http://static.tumblr.com/lymzvo4/yiAmimr6a/flickr.png"/>
+	<meta name="image:socialFrHover" content="http://static.tumblr.com/lymzvo4/yiAmimr6a/flickr-hover.png"/>
+	<meta name="image:socialBlogger" content="http://static.tumblr.com/lymzvo4/ZRgmimqyd/blogger.png"/>
+	<meta name="image:socialBHover" content="http://static.tumblr.com/lymzvo4/DmSmimqzz/blogger-hover.png"/>
+	<meta name="image:socialYouTube" content="http://static.tumblr.com/lymzvo4/JVsmimrhe/youtube.png"/>
+	<meta name="image:socialYtHover" content="http://static.tumblr.com/lymzvo4/dJnmimri6/youtube-hover.png"/>
+	<meta name="image:like" content="http://static.tumblr.com/lymzvo4/YLFmjf9gp/postlike.png"/>
+	<meta name="image:reBlog" content="http://static.tumblr.com/lymzvo4/Sbwmjf9hk/retpost.png"/>
+	<meta name="image:faceShare" content="http://static.tumblr.com/lymzvo4/rOamjf9fp/postface.png"/>
+	<meta name="image:twitShare" content="http://static.tumblr.com/lymzvo4/zHImjf9g9/posttwit.png"/>
+	<meta name="image:image:friendShare" content="http://static.tumblr.com/lymzvo4/ZyOmjf9fw/postfriend.png"/>
+
+<!-- DEFAULT COLORS -->
+	<meta name="color:Background" content="#fff"/>
+	<meta name="color:Text" content="#333"/>
+
+	<link rel="shortcut icon" href="{Favicon}"/>
+	<link rel="alternate" type="application/rss+xml" name="RSS" href="{RSS}"/>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+
+	<script type="text/javascript" src="http://static.tumblr.com/lymzvo4/OOnmiqkoe/twit.js"></script>
+	<script type="text/javascript" src="http://static.tumblr.com/lymzvo4/8Ihmusfgq/imgliquid-min.js"></script>
+	<style type="text/css" media="screen">
+
+/* Miskin Penguen :) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+html {height: 101%;}
+
+body {
+	line-height: 1;
+}
+h1, h2, h3, h4, h5, h6 {	
+	clear: both;
+}
+ul {
+	list-style: none;
+}
+
+blockquote {
+	quotes: none;	
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a img { border: none; }
+
+img { display: block; }
+
+
+ul,li,a{
+	text-decoration:none;
+	list-style:none;
+    color: rgb(85,85,85);
+}
+
+::-moz-selection{
+	background-color: rgb(177,39,64);
+	color: rgb(255,255,255);
+}
+
+::selection{
+	background-color: rgb(177,39,64);
+	color: rgb(255,255,255);
+}
+
+@font-face {
+	font-family: franklingothicbook;
+	src: url('http://static.tumblr.com/lymzvo4/m1vmv7ekv/franklingothicbook.ttf');
+	src: local('franklingothicbook'),
+	local('franklingothicbook')
+	url('http://static.tumblr.com/lymzvo4/m1vmv7ekv/franklingothicbook.ttf') format('trutype'),
+	url('http://static.tumblr.com/lymzvo4/tPamv7esi/franklingothicbook.woff') format('woff');
+}
+
+@font-face {
+	font-family: franklingothicdemi;
+	src: url('http://static.tumblr.com/lymzvo4/VNLmv7eud/franklingothicdemi.ttf');
+	src: local('franklingothicdemi'),
+	local('franklingothicdemi'),
+	url('http://static.tumblr.com/lymzvo4/VNLmv7eud/franklingothicdemi.ttf') format('truetpye'),
+	url('http://static.tumblr.com/lymzvo4/Icwmv7evf/franklingothicdemi.woff') format('woff');
+}
+
+#container{ margin:0 auto; min-width:500px; width:37em }
+    
+span,p {
+    margin: 0;
+    padding: 0;
+}
+    
+body {
+    font-size: 100%;
+	font-family: 'franklingothicbook', Arial, sans-serif;	
+	background: url('{image:Background}') rgb(224,224,224) no-repeat center center fixed;
+}
+
+/* headerDuhaTema */
+
+.left,.like_button,.reblog_button { float: left; }
+
+.right { float: right; }
+
+.clear { clear: both; }
+
+.overflowHid,ul#recentcomments { overflow: hidden; }
+
+.overflowAuto { overflow: auto; }
+
+.stabilSize { width: 920px; margin: 0px auto; }
+
+.marginNone { margin: 0px !important; }
+
+.marginAuto { margin: 0px auto; }
+
+.paddingNone { padding: 0px !important; }
+
+.autoSize,.media-list { width: 100%; height: 100%; }
+
+.marginBot { margin: 20px 0px 0px; }
+
+.paddingStabilSize { padding: 15px 0px; }
+
+header {
+    background: rgb(235,235,234);
+	width: 100%;
+	height: auto;
+	-webkit-box-shadow: 0px 0px 3px rgb(0,0,0);
+	-o-box-shadow: 0px 0px 3px rgb(0,0,0);
+	box-shadow: 0px 0px 3px rgb(0,0,0);
+}
+
+.headerWrap {
+	width: 58em;
+	margin: 0px auto;
+	height: auto;
+}
+
+.clear { clear: both; }
+
+.logo {
+	display: inline-block;
+}
+
+span.logoD a {
+	color: rgb(177,39,64);
+	font-family: 'franklingothicdemi', arial, sans serif;
+	font-size: 20px;
+	border-right: 1px solid rgb(177,39,64);
+	padding: 0px 7px;
+}
+
+span.logoT {
+	color: rgb(85,85,85);
+	font-family: 'franklingothicbook', Arial, sans serif;
+	font-size: 12px;
+    top: -2px;
+}
+
+div#logoT {
+	float: left;
+	margin: 1px 0px 0px 5px;
+}
+
+ul.headMenu {
+    float: right;
+    margin-top: -18px;
+}
+
+ul.headMenu li {
+    float: left;
+    margin-left: 18px;
+    padding: 20px 0px 1px 0px;
+}
+
+ul.headMenu li a {
+	color: rgb(85,85,85);
+	font-family: 'franklingothicbook', Arial, sans serif;
+	font-size: 15px;
+	border-top: 1px solid rgb(235,235,234);
+	transition: border-top 0.8s, color 0.8s;
+	-webkit-transition: border-top 0.8s, color 0.8s;
+	-moz-transition: border-top 0.8s, color 0.8s;
+	-o-transition: border-top 0.8s, color 0.8s;
+    padding: 15px 0px;
+}
+
+
+
+ul.headMenu li a:hover {
+	border-top: 1px solid rgb(177,39,64);
+	color: rgb(177,39,64);
+}
+
+/* headerDuhaTema Son */
+
+
+/* sosyal menu alani baslangic */
+
+.socialWrap {
+    width: 62.5em;
+	margin: 0px auto;
+}
+
+ul.socialMenu {
+	background: rgb(235,235,234);
+	width: 174px;
+	height: 25px;
+	margin: 1px 0 0;
+    padding: 5px 5px 0px 5px;
+	-webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+	-o-box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+ul.socialMenu li{
+	background: rgb(235,235,234);
+	float: left;
+	padding: 0 5px;
+}
+
+.thumb{
+	background: url('{image:socialTumblr}');
+	width: 10px;
+	height: 17px;
+}
+
+.thumb:hover{
+	background: url('{image:socialTumblrHover}');
+}
+
+.twit{
+	background: url('{image:socialTwit}');
+	width: 13px;
+	height: 17px;
+}
+
+.twit:hover{
+	background: url('{image:socialTHover}');
+}
+
+.Face{
+	background: url('{image:socialFace}');
+	width: 8px;
+	height: 17px;
+}
+
+.Face:hover{
+	background: url('{image:socialFbHover}');
+}
+
+.ff{
+	background: url('{image:socialFf}');
+	width: 15px;
+	height: 17px;
+}
+
+.ff:hover{
+	background: url('{image:socialFHover}');
+}
+
+.flickr{
+	background: url('{image:socialFlickr}');
+	width: 17px;
+	height: 17px;
+	margin: 2px 0px 0px 0px;
+}
+
+.flickr:hover{
+	background: url('{image:socialFrHover}');
+}
+
+.blogger{
+	background: url('{image:socialBlogger}');
+	width: 17px;
+	height: 17px;
+	margin: 1px 0px 0px 0px
+}
+
+.blogger:hover{
+	background: url('{image:socialBHover}');
+}
+
+.yTube{
+	background: url('{image:socialYouTube}');
+	width: 15px;
+	height: 17px;
+}
+
+.yTube:hover{
+	background: url('{image:socialYtHover}');
+}
+
+/* sosyal menu alani bitis */
+
+
+  /* DuhaTema Orta Alan */
+  
+section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content {
+	max-width: 62.5em;
+	margin: 20px auto 35px auto;
+	padding: 15px;
+}
+
+.wrap {
+	width: 100%;
+}
+
+
+.smallWrap:nth-child(odd) {
+    background: rgb(255,255,255);
+	border: 1px solid rgb(138,138,138);
+	width: 12.6%;
+	height: 212px;
+	display: block;
+	padding: 15px;
+	margin: 0px 15px 15px 0px;
+	float: left;
+	box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.5);
+}
+
+.smallWrap:nth-child(even) {
+	background: rgb(255,255,255);
+	border: 1px solid rgb(138,138,138);
+	width: 28%;
+	height: 212px;
+	padding: 15px;
+	margin: 0px 15px 15px 0px;
+	float: left;
+	box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.5);
+}
+
+.largeWrap {
+    background: rgb(255,255,255);
+	border: 1px solid rgb(138,138,138);
+	width: 28%;
+	height: 212px;
+	padding: 15px;
+	margin: 0px 15px 15px 0px;
+	float: left;
+	box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.5);
+}
+
+.secContentCaption {
+    overflow:hidden;  
+    height: 7em;
+    width: 100%;
+    font-size: 1em;
+    line-height: 1em;
+    padding-right:20px;    
+}
+
+.secContent iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.newIframeSize iframe {
+    height: 50% !important;
+}
+
+.secContent {
+	overflow:hidden;  
+    height: 100%;
+    width: 100%;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.secContent p img{
+    width: 100%;
+}
+
+
+.secContent h1 {
+	font-family: 'franklingothicbook', Arial, sans serif;
+	font-size: 15px;
+	color: rgb(85,85,85) !important;
+    font-weight: 100;
+}
+
+.secContent a.date {
+    border-bottom: 1px dashed rgb(85,85,85);
+    padding: 4px 0px;
+}
+
+.secContent a.date span {
+    font-size: 11px;
+    padding: 1px 0px 10px 0px;
+}
+
+
+.secContentVideo p,li,blockquote,span {
+    font-family: 'franklingothicbook', Arial, sans serif;
+	font-size: 12px;
+	color: rgb(85,85,85);  
+	position:relative;
+    display:inline-block;
+}
+
+.secContentCaption p,li,blockquote,span {
+    font-family: 'franklingothicbook', Arial, sans serif;
+    font-size: 12px;
+	color: rgb(85,85,85);  
+	position:relative;
+    display:inline-block;
+}
+
+.secContent p,li,blockquote,span {
+	font-family: 'franklingothicbook', Arial, sans serif;
+	font-size: 12px;
+	color: rgb(85,85,85);  
+	position:relative;
+    /*display:inline-block;*/
+}
+
+.indexDate {
+    border-bottom: 1px dashed rgb(85,85,85);
+    padding: 5px 0px 6px;
+    margin-bottom: 4px;
+}
+
+span.person:nth-child(odd) {
+    font-family: 'franklingothicbook', Arial, sans serif;
+    font-size: 12px;
+    color: rgb(39,39,39);
+}
+
+span.person:nth-child(even) {
+    font-family: 'franklingothicbook', Arial, sans serif;
+    font-size: 12px;
+    color: rgb(89,89,89);
+}
+
+span.person:nth-child(even) {
+    font-family: 'franklingothicbook', Arial, sans serif;
+    font-size: 12px;
+    color: rgb(85,85,85);
+}
+
+/* DuhaTema Orta Alan Bitiş */
+
+/* DuhaTema Footer Css */
+    
+footer {
+    background: rgb(234,235,234);
+	width: 100%;
+	padding: 20px 0px;
+	position: relative;
+	display: block;
+	-webkit-box-shadow: 0px 0px 3px rgb(0,0,0);
+	-o-box-shadow: 0px 0px 3px rgb(0,0,0);
+	box-shadow: 0px 0px 3px rgb(0,0,0);
+}
+
+.footerWrap {
+	width: 62.5em;
+	margin: 0px auto;
+	padding: 15px;
+}
+
+.footerSec {
+	width: 180px;
+	float: left;
+	margin: 0px 30px 0px 0px;
+}
+
+.footerSec a {
+	border-bottom: 1px dashed rgb(150,150,150);
+}
+
+.footerSec a span.readMore{
+	font-family: 'franklingothicbook', Arial, sans serif;
+	font-size: 13px;
+	color: rgb(177,39,64);
+}
+
+.footerSec p {
+	font-family: 'franklingothicbook', Arial, sans serif;
+	font-size: 11px;
+	color: rgb(125,125,125);
+	padding: 10px 0px 10px 0px;
+}
+
+.randomPost p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position:relative;
+    padding: 10px 0px 0px;
+}
+
+.footerSec img {
+    display: none;
+}
+
+
+a.readMore {
+	font-size: 12px;
+	color: rgb(177,39,64);
+}
+
+span.twitColor {
+	font-size: 12px;
+	color: rgb(0,180,255);
+}
+
+ul.popPhoto {
+	padding: 10px 0px 0px 0px;
+}
+
+ul.popPhoto li {
+	border: 1px solid rgb(85,85,85);
+	float: left;
+	margin: 0px 10px 10px 0px;
+	height: 31px;
+}
+
+ul.popPhoto li img {
+    height: 31px;
+}
+
+.footerPhoto {
+	float: left;
+	margin: 0px 25px 0px 0px;
+	width: 135px;
+}
+
+.footerPhoto span{
+	font-family: 'franklingothicbook', Arial, sans serif;
+	font-size: 13px;
+	color: rgb(85,85,85);
+	padding: 0px 0px 10px 0px;
+}
+
+.tema {
+	float: left;
+	margin: 50px 0px 0px 0px;
+	width: 135px;
+}
+span.temaAd {
+    color: rgb(0,0,0)
+}
+
+span.temaAd {
+	font-family: 'franklingothicbook', Arial, sans serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+span.temaSoyad {
+	font-family: 'franklingothicbook', Arial, sans serif;
+	font-size: 18px;
+}
+
+/* DuhaTema Footer CSS Son */
+
+
+/* pageContent */
+
+.page {
+    background-color: rgb(255,255,255);
+	padding: 5px;
+	float: left;
+	margin: 0px 20px 0px 0px;
+	width: 50%;
+	height: 50%;
+}
+
+.pageText img{
+	max-width: 100%;
+    width: 500px;
+	height: auto;
+	margin-bottom: 8px;
+}
+
+.pageContent {
+	background-color: rgb(225,225,225);
+	padding: 5px 8px;
+	margin-bottom: 8px;
+}
+
+.pageHeader { margin-bottom: 5px; }
+.pageHeader img { width: 100%; max-width: 100%; }
+.pageHeader iframe { width: 100%; height: auto; }
+
+.contentHeader {
+	text-align: left;
+	margin: 6px 0px;
+	line-height: 1.4;
+}
+
+.contentHeader h1 {
+	font-family: 'franklingothicbook', arial, sans serif;
+	font-size: 14px;
+	color: rgb(85,85,85);
+}
+
+.contentHeader p {
+	font-family: 'franklingothicbook', arial, sans serif;
+	font-size: 12px;
+	color: rgb(85,85,85);
+}
+
+.pageText {
+	width: 100%;
+	height: 210px;
+	overflow-y: scroll;
+}
+
+.pageText p {
+	font-family: 'franklingothicbook', arial, sans serif;
+	font-size: 15px;
+	color: rgb(85,85,85);
+	line-height: 1.5;
+}
+
+#style-4::-webkit-scrollbar-track
+{
+	background-color: rgb(245,245,245);
+	border: 1px solid rgb(0,0,0);
+}
+
+#style-4::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar-thumb
+{
+	background-color: rgb(177,39,64);
+	border: 1px solid rgb(0,0,0);
+}
+
+.pageFooter {
+	background-color: rgb(225,225,225);
+	padding: 7px 7px 4px;
+	margin-bottom: 3px;
+}
+
+div.postLikeRet{
+    float: left;
+}
+
+span.postLikeRet {
+	margin-right: 10px;
+	color: rgb(85,85,85);
+	font-size: 16px;
+	padding: 2px 6px 0px;
+}
+
+.postSocial {
+	float: right;
+}
+
+.postSocial img {
+	float: left;
+	margin-right: 3px;
+}
+
+/* pageContent */
+
+/* commentWrap */
+
+.commentWrap {
+	width: 45%;
+	height: auto;
+	float: left;
+	padding: 5px;
+}
+
+.commentWrap input {
+	width: 100%;
+	height: 25px;
+	padding: 10px;
+	background-color: rgb(225,225,225);
+	border: 1px solid rgb(255,255,255);
+	margin-bottom: 10px;
+	color: rgb(85,85,85);
+	font-size: 17px;
+	outline: none;
+}
+
+.commentWrap textarea {
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	background-color: rgb(225,225,225);
+	border: 1px solid rgb(255,255,255);
+	margin-bottom: 10px;
+	color: rgb(85,85,85);
+	font-size: 17px;
+	font-family: 'franklingothicdemi', arial, sans serif;
+	outline: none;
+}
+
+.commentButton {
+	width: 105% !important;
+	height: auto !important;
+	background-color: rgb(177,39,64) !important;
+	border: 2px solid rgb(255,255,255) !important;
+	color: rgb(255,255,255) !important;
+	font-weight: bold !important;
+	font-size: 19px !important;
+}
+
+/* commentWrap bitim */
+
+/* Some clearfix code from HTML5 Boilerplate */
+.clearfix:before, .clearfix:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+.html_photoset { height: 213px !important; margin: 0 auto !important; overflow: hidden !important; }
+.photoset_row { width: 250px !important; height: 149px !important; margin: 0 auto !important; }
+
+.reTextImage img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.textImageSize { width: 100%; height: 50%; margin-bottom: 10px; }
+ol.notes { 	width: 45%; height: auto; float: left; padding: 5px; }
+
+ol.notes li {
+    background-color: rgb(177,39,64);
+	width: 100%;
+	height: auto;
+	border: 2px solid rgb(255,255,255);
+	margin-bottom: 10px;
+	height: 31px;
+}
+
+ol.notes li.like {
+    background-image: url("http://static.tumblr.com/lymzvo4/UWZmvenuf/likeico.png");
+    background-position: 21px 6px;
+    background-repeat: no-repeat;
+}
+
+ol.notes li.reblog {
+    background-image: url("http://static.tumblr.com/lymzvo4/fD2mvenuw/retico.png");
+    background-position: 17px 6px;
+    background-repeat: no-repeat;
+}
+
+ol.notes li span {
+    width: 340px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+ol.notes li a,ol.notes li span { font-family: 'franklingothicbook', Arial, sans-serif; font-size: 14px; color: rgb(255,255,255); }
+ol.notes li a.avatar_frame { position: absolute; margin: 8px 0px 0px 75px; }
+span.action { position: absolute; margin: 10px 0px 0px 100px; }
+
+/* tabWrap alanı */
+
+.likeIco {
+	border-right: 2px solid rgb(255,255,255);
+	float: left;
+	width: 60px !important;
+	height: 31px;
+}
+
+.likeIco img { max-width: 100%; margin: 6px auto; }
+.tabContent { padding: 7.5px 10px; float: left; }
+.tabProfilIco { margin-right: 10px; float: left; }
+.tabContentText { color: rgb(255,255,255); font-size: 14px; float: left; }
+
+.more_notes_link_container { padding: 15px 0 0; }
+.pageNumber {
+    background: rgb(255,255,255);
+    border: 1px solid rgb(138,138,138);
+    width: auto;
+    height: 10px;
+    display: block;
+    text-align: center;
+    padding: 8px 10px 10px 10px;
+    margin: 0px 5px 0px 0px;
+    float: left;
+    box-shadow: 2px 4px 3px -3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 2px 4px 3px -3px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 2px 4px 3px -3px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.pagination { text-align: center; width: 97%; overflow: hidden; }
+
+.pagination ul { overflow: hidden; }
+
+/* tabWrap alanı bitim */
+    {CustomCSS}
+  </style>
+</head>
+
+<body>
+    <!-- HeaderDuha -->
+    
+<header class="overflowHid">
+<div class="headerWrap paddingStabilSize overflowHid clearfix">
+    <div class="left overflowHid">
+        <span class="logoD">
+            <a href="{BlogURL}">{Title}</a>
+        </span>
+        
+        <span class="logoT">
+          {block:Description}
+            {Description}
+          {/block:Description}
+        </span>
+    </div>
+
+    <ul class="headMenu overflowHid">
+        <li><a href="http://bulutuzer.tumblr.com/">Homepage</a></li>
+        {block:HasPages}
+            {block:Pages}
+                <li> <a href="{URL}">{Label}</a></li>
+            {/block:Pages}
+        {/block:HasPages}
+        <li><a href="/archive">{lang:Archive}</a></li>
+        <li><a href="{RSS}">{lang:RSS}</a></li>
+    </ul>
+</div>
+
+</header>
+    
+    <!-- HeaderDuha Son -->
+    
+    <!-- DuhaSocial -->
+    
+<div class="socialWrap">
+	<ul class="socialMenu overflowHid">
+		<li><a href="http://www.tumblr.com/"><div class="thumb"></div></a></li>
+		<li><a href="https://twitter.com/"><div class="twit"></div></a></li>
+		<li><a href="https://www.facebook.com/"><div class="Face"></div></a></li>
+		<li><a href="http://friendfeed.com/"><div class="ff"></div></a></li>
+		<li><a href="http://www.flickr.com/"><div class="flickr"></div></a></li>
+		<li><a href="http://www.blogger.com"><div class="blogger"></div></a></li>
+		<li><a href="http://www.youtube.com/"><div class="yTube"></div></a></li>
+	</ul>
+</div>
+    
+    <!-- DuhaSocial son -->
+    
+<section>
+	<div class="content">
+	<div class="wrap overflowHid">
+		
+			{block:SearchPage}
+			<div id="searchresultcount">
+			  {block:SearchResults}
+				<p>{lang:Your search for SearchQuery returned SearchResultCount results 2}</p>
+			  {block:SearchResults}
+			
+			  {block:NoSearchResults}
+				<p>{lang:No search results for SearchQuery 2}</p>
+			  {block:NoSearchResults}
+			</div>
+			{/block:SearchPage}
+
+	{block:Posts}
+		{block:Text}
+			{block:IndexPage}
+				<div class="smallWrap overflowHid">
+					<div class="secContent overflowHid">
+						<div class="reTextImage imgLiquid textImageSize">
+							<a href="{Permalink}"></a>
+						</div>
+						
+						{block:Title}
+							<h1><a href="{Permalink}">{Title}</a></h1>
+							{block:Date}
+							<a href="{Permalink}" class="date">
+								<span>{ShortMonth} {DayOfMonthWithZero}{DayOfMonthSuffix}, {Year}</span>
+							</a>
+							{/block:Date}
+						{/block:Title}
+						{Body}
+						{block:More}<a href="{Permalink}" class="readMore">{lang:Read More}</a>{/block:More}
+					</div>
+				</div>
+			{/block:IndexPage}
+
+			{block:PermalinkPage}
+				<div class="page">
+					<div class="pageHeader">
+						
+					</div>
+
+					<div class="pageContent">
+						<div class="contentHeader">
+							{block:Title}
+								<h1>{Title}</h1>
+							{/block:Title}
+							{block:Date}
+								<p>{ShortMonth} {DayOfMonthWithZero}{DayofMonthSuffix}, {Year}</p>
+							{/block:Date}
+						</div>
+
+						<div class="pageText" id="style-4">
+							{Body}
+						</div>
+					</div>
+
+					<div class="pageFooter overflowHid">
+						<div class="postLikeRet overflowHid">
+							{LikeButton}<span class="postLikeRet">Like ?</span>
+						</div>
+						
+						<div class="postLikeRet overflowHid">
+							{ReBlogButton}<span class="postLikeRet">Retblog</span>
+						</div>
+						
+						<div class="postSocial overflowHid">
+						
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+				$("div.pageText p img").appendTo("div.pageHeader");
+				</script>
+
+				{block:PostNotes}
+					{PostNotes}
+				{/block:PostNotes}
+			{/block:PermalinkPage}
+		{/block:Text}
+
+		{block:Photo}
+			{block:IndexPage}
+				<div class="smallWrap overflowHid">
+					<div class="secContent overflowHid">
+						<div class="reTextImage imgLiquid autoSize">
+							<a href="{Permalink}">
+								<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
+							</a>
+						</div>
+						
+						{block:Caption}
+							{Caption}
+						{block:Caption}
+					</div>
+				</div>
+			{/block:IndexPage}
+
+			{block:PermalinkPage}
+				<div class="page">
+					<div class="pageHeader">
+						<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
+					</div>
+				
+					<div class="pageContent">
+						<div class="contentHeader">
+							{block:Date}
+								<p>{ShortMonth} {DayOfMonthWithZero}{DayofMonthSuffix}, {Year}</p>
+							{/block:Date}
+						</div>
+					
+						<div class="pageText" id="style-4">
+							{block:Caption}
+								{Caption}
+							{block:Caption}
+						</div>
+					</div>
+				
+					<div class="pageFooter overflowHid">
+						<div class="postLikeRet overflowHid">
+							{LikeButton}<span class="postLikeRet">Like ?</span>
+						</div>
+						
+						<div class="postLikeRet overflowHid">
+							{ReBlogButton}<span class="postLikeRet">Retblog</span>
+						</div>
+						
+						<div class="postSocial overflowHid">
+							<!-- sosyal ikonlar bitim -->
+						</div>
+					</div>
+				</div>
+				
+				{block:PostNotes}
+					{PostNotes}
+				{/block:PostNotes}
+			{/block:PermalinkPage}
+		{/block:Photo}
+
+		{block:Photoset}
+			{block:IndexPage}
+				<div class="smallWrap overflowHid">
+					<div class="secContent overflowHid">
+						<div class="reTextImage autoSize">
+							{Photoset}
+						</div>
+						
+						{block:Caption}
+							{Caption}
+						{/block:Caption}
+					</div>
+				</div>
+			{/block:IndexPage}
+
+			{block:PermalinkPage}
+				<div class="page">
+
+					<div class="pageContent">
+						<div class="contentHeader">
+							{block:Date}
+								<p>{ShortMonth} {DayOfMonthWithZero}{DayofMonthSuffix}, {Year}</p>
+							{/block:Date}
+						</div>
+					
+						<div class="pageText" id="style-4">
+						{Photoset}
+							{block:Caption}
+								{Caption}
+							{block:Caption}
+						</div>
+					</div>
+
+					<div class="pageFooter overflowHid">
+						<div class="postLikeRet overflowHid">
+							{LikeButton}<span class="postLikeRet">Like ?</span>
+						</div>
+						
+						<div class="postLikeRet overflowHid">
+							{ReBlogButton}<span class="postLikeRet">Retblog</span>
+						</div>
+						
+						<div class="postSocial overflowHid">
+							<!-- sosyal ikonlar bitim -->
+						</div>
+					</div>
+				</div>
+				{block:PostNotes}
+					{PostNotes}
+				{/block:PostNotes}
+			{/block:PermalinkPage}
+		{/block:Photoset}
+
+		{block:Panorama}
+			{block:IndexPage}
+				<div class="smallWrap overflowHid">
+					<div class="secContent overflowHid">
+						<div class="reTextImage autoSize">
+							{LinkOpenTag}
+								<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+							{LinkCloseTag}
+						</div>
+						
+						{block:Caption}
+							<p>{Caption}</p>
+						{/block:Caption}
+					</div>
+				</div>
+			{/block:IndexPage}
+
+			{block:PermalinkPage}
+				<div class="page">
+					<div class="pageHeader">
+						{LinkOpenTag}
+							<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+						{LinkCloseTag}
+					</div>
+					
+					<div class="pageContent">
+						<div class="contentHeader">
+							{block:Date}
+								<p>{ShortMonth} {DayOfMonthWithZero}{DayofMonthSuffix}, {Year}</p>
+							{/block:Date}
+						</div>
+					
+						<div class="pageText" id="style-4">
+							{block:Caption}
+								{Caption}
+							{block:Caption}
+						</div>
+					</div>
+				
+					<div class="pageFooter overflowHid">
+						<div class="postLikeRet overflowHid">
+							{LikeButton}<span class="postLikeRet">Like ?</span>
+						</div>
+						
+						<div class="postLikeRet overflowHid">
+							{ReBlogButton}<span class="postLikeRet">Retblog</span>
+						</div>
+						
+						<div class="postSocial overflowHid">
+							<!-- sosyal ikonlar bitim -->
+						</div>
+					</div>
+				</div>
+				
+				{block:PostNotes}
+					{PostNotes}
+				{/block:PostNotes}
+			{/block:PermalinkPage}
+		{/block:Panorama}
+
+		{block:Quote}
+			{block:IndexPage}
+				<div class="smallWrap overflowHid">
+					<div class="secContent overflowHid">
+						{block:Source}
+							<h1>{Source}</h1>
+							{block:Date}
+							<a href="{Permalink}" class="date">
+								<span>{ShortMonth} {DayOfMonthWithZero}{DayOfMonthSuffix}, {Year}</span>
+							</a>
+							{/block:Date}
+							
+						{/block:Source}
+						<p>"{Quote}"</p>
+					</div>
+				</div>
+			{/block:IndexPage}
+
+			{block:PermalinkPage}
+				<div class="page">
+					<div class="pageHeader">
+					
+					</div>
+					
+					<div class="pageContent">
+						<div class="contentHeader">
+							{block:Source}
+								<h1>{Source}</h1>
+							{/block:Source}
+							{block:Date}
+								<p>{ShortMonth} {DayOfMonthWithZero}{DayofMonthSuffix}, {Year}</p>
+							{/block:Date}
+						</div>
+					
+						<div class="pageText" id="style-4">
+							<p>"{Quote}"</p>
+						</div>
+					</div>
+				
+					<div class="pageFooter overflowHid">
+						<div class="postLikeRet overflowHid">
+							{LikeButton}<span class="postLikeRet">Like ?</span>
+						</div>
+						
+						<div class="postLikeRet overflowHid">
+							{ReBlogButton}<span class="postLikeRet">Retblog</span>
+						</div>
+						
+						<div class="postSocial overflowHid">
+							<!-- sosyal ikonlar bitim -->
+						</div>
+					</div>
+				</div>
+				
+				{block:PostNotes}
+					{PostNotes}
+				{/block:PostNotes}
+				<script type="text/javascript">
+					$("div.pageText p img").appendTo("div.pageHeader");
+				</script>
+			{/block:PermalinkPage}
+		{/block:Quote}
+
+		{block:Link}
+			{block:IndexPage}
+				<div class="smallWrap overflowHid">
+					<div class="secContent overflowHid">
+						<h1><a href="{URL}" {Target}>{Name}</a></h1>
+						{block:Date}
+							<a href="{Permalink}" class="date">
+								<span>{ShortMonth} {DayOfMonthWithZero}{DayOfMonthSuffix}, {Year}</span>
+							</a>
+						{/block:Date}
+						
+						{block:Description}
+							{Description}
+						{/block:Description}
+					</div>
+				</div>
+			{/block:IndexPage}
+
+			{block:PermalinkPage}
+				<div class="page">
+					<div class="pageHeader">
+					
+					</div>
+					
+					<div class="pageContent">
+						<div class="contentHeader">
+								<h1><a href="{URL}" {Target}>{Name}</a></h1>
+							{block:Date}
+								<p>{ShortMonth} {DayOfMonthWithZero}{DayofMonthSuffix}, {Year}</p>
+							{/block:Date}
+						</div>
+					
+						<div class="pageText" id="style-4">
+							{block:Description}
+								{Description}
+							{/block:Description}
+						</div>
+					</div>
+				
+					<div class="pageFooter overflowHid">
+						<div class="postLikeRet overflowHid">
+							{LikeButton}<span class="postLikeRet">Like ?</span>
+						</div>
+						
+						<div class="postLikeRet overflowHid">
+							{ReBlogButton}<span class="postLikeRet">Retblog</span>
+						</div>
+						
+						<div class="postSocial overflowHid">
+							<!-- sosyal ikonlar bitim -->
+						</div>
+					</div>
+				</div>
+				
+				{block:PostNotes}
+					{PostNotes}
+				{/block:PostNotes}
+				<script type="text/javascript">
+					$("div.pageText p img").appendTo("div.pageHeader");
+				</script>
+			{/block:PermalinkPage}
+		{/block:Link}
+
+		{block:Chat}
+			{block:IndexPage}
+				<div class="smallWrap overflowHid">
+					<div class="secContent overflowHid">
+					  {block:Title}<h1>{Title}</h1>{/block:Title}
+						{block:Date}
+							<a href="{Permalink}" class="date">
+								<span>{ShortMonth} {DayOfMonthWithZero}{DayOfMonthSuffix}, {Year}</span>
+							</a>
+						{/block:Date}
+					
+						<ul class="convo">
+						  {block:Lines}
+							  <li class="{Alt}">
+								<span class="person">{block:Label}{Label}{/block:Label}</span>
+								<span class="line">{Line}</span>
+							  </li>
+						  {/block:Lines}
+						</ul>
+					</div>
+				</div>
+			{/block:IndexPage}
+
+			{block:PermalinkPage}
+				<div class="page">
+					<div class="pageHeader">
+					
+					</div>
+					
+					<div class="pageContent">
+						<div class="contentHeader">
+							{block:Title}<h1>{Title}</h1>{/block:Title}
+							{block:Date}
+								<p>{ShortMonth} {DayOfMonthWithZero}{DayofMonthSuffix}, {Year}</p>
+							{/block:Date}
+						</div>
+					
+						<div class="pageText" id="style-4">
+							<ul class="convo">
+							  {block:Lines}
+								  <li class="{Alt}">
+									<span class="person">{block:Label}{Label}{/block:Label}</span>
+									<span class="line">{Line}</span>
+								  </li>
+							  {/block:Lines}
+							</ul>
+						</div>
+					</div>
+				
+					<div class="pageFooter overflowHid">
+						<div class="postLikeRet overflowHid">
+							{LikeButton}<span class="postLikeRet">Like ?</span>
+						</div>
+						
+						<div class="postLikeRet overflowHid">
+							{ReBlogButton}<span class="postLikeRet">Retblog</span>
+						</div>
+						
+						<div class="postSocial overflowHid">
+							<!-- sosyal ikonlar bitim -->
+						</div>
+					</div>
+				</div>
+				
+				{block:PostNotes}
+					{PostNotes}
+				{/block:PostNotes}
+			{/block:PermalinkPage}
+		{/block:Chat}
+
+		{block:Video}
+			{block:IndexPage}
+				<div class="smallWrap overflowHid">
+					<div class="secContent secContentIframe overflowHid">
+						{Video-500}
+
+						{block:Date}
+							<a href="{Permalink}" class="date">
+								<span>{ShortMonth} {DayOfMonthWithZero}{DayOfMonthSuffix}, {Year}</span>
+							</a>
+						{/block:Date}
+						
+						{block:Caption}
+							{Caption}
+						{/block:Caption}
+					</div>
+				</div>
+			{/block:IndexPage}
+
+			{block:PermalinkPage}
+				<div class="page">
+					<div class="pageHeader">
+						{Video-500}
+					</div>
+					
+					<div class="pageContent">
+						<div class="contentHeader">
+							{block:Date}
+								<p>{ShortMonth} {DayOfMonthWithZero}{DayofMonthSuffix}, {Year}</p>
+							{/block:Date}
+						</div>
+					
+						<div class="pageText" id="style-4">
+							{block:Caption}
+								{Caption}
+							{/block:Caption}
+						</div>
+					</div>
+				
+					<div class="pageFooter overflowHid">
+						<div class="postLikeRet overflowHid">
+							{LikeButton}<span class="postLikeRet">Like ?</span>
+						</div>
+						
+						<div class="postLikeRet overflowHid">
+							{ReBlogButton}<span class="postLikeRet">Retblog</span>
+						</div>
+						
+						<div class="postSocial overflowHid">
+							<!-- sosyal ikonlar bitim -->
+						</div>
+					</div>
+				</div>
+				
+				{block:PostNotes}
+					{PostNotes}
+				{/block:PostNotes}
+			{/block:PermalinkPage}
+		{/block:Video}
+
+		{block:Audio}
+			{block:IndexPage}
+				<div class="smallWrap overflowHid">
+					<div class="secContent secContentIframe overflowHid">
+						{AudioPlayerBlack}
+
+						{block:Date}
+							<a href="{Permalink}" class="date">
+								<span>{ShortMonth} {DayOfMonthWithZero}{DayOfMonthSuffix}, {Year}</span>
+							</a>
+						{/block:Date}
+						
+						{block:Caption}
+							{Caption}
+						{/block:Caption}
+					</div>
+				</div>
+			{/block:IndexPage}
+
+			{block:PermalinkPage}
+				<div class="page">
+					<div class="pageHeader">
+						{AudioPlayerBlack}
+					</div>
+					
+					<div class="pageContent">
+						<div class="contentHeader">
+							{block:Date}
+								<p>{ShortMonth} {DayOfMonthWithZero}{DayofMonthSuffix}, {Year}</p>
+							{/block:Date}
+						</div>
+					
+						<div class="pageText" id="style-4">
+							{block:Caption}
+								{Caption}
+							{/block:Caption}
+						</div>
+					</div>
+				
+					<div class="pageFooter overflowHid">
+						<div class="postLikeRet overflowHid">
+							{LikeButton}<span class="postLikeRet">Like ?</span>
+						</div>
+						
+						<div class="postLikeRet overflowHid">
+							{ReBlogButton}<span class="postLikeRet">Retblog</span>
+						</div>
+						
+						<div class="postSocial overflowHid">
+							<!-- sosyal ikonlar bitim -->
+						</div>
+					</div>
+				</div>
+				
+				{block:PostNotes}
+					{PostNotes}
+				{/block:PostNotes}
+			{/block:PermalinkPage}
+		{/block:Audio}
+
+	{/block:Posts}
+
+	<script type="text/javascript">
+	$(function(){
+
+		$('div.secContent p img').each(function(i) {
+			$(this).attr('id', 'test'+(i+1));
+			$(this).closest('.secContent').find('.reTextImage > a').addClass("a"+(i+1)); 
+		});
+		 
+		$('div.secContent p img,div.reTextImage').each(function(i) {
+			$("#test"+(i+1)).appendTo(".a"+(i+1));
+		});
+
+		$(".imgLiquid").imgLiquid();
+		$("div.imgLiquid_error").remove();
+
+		$('div.secContentIframe').each(function(i) {
+			$(this).closest('.secContentIframe').find('p').attr("id", "iframeText"); 
+			if(document.getElementById('iframeText')){
+				$(this).addClass("newIframeSize");
+			}
+		});
+
+		$(".like").append("<span class='likeIco'><img src='http://static.tumblr.com/lymzvo4/UWZmvenuf/likeico.png' /></span>");
+		$(".reblog").append("<span class='likeIco'><img src='http://static.tumblr.com/lymzvo4/fD2mvenuw/retico.png' /></span>");
+		$("ol.notes li blockquote").remove();
+		$("div.postSocial").append("<a href='http://www.addtoany.com/add_to/friendfeed?linkurl={Permalink}'><img src='http://static.tumblr.com/lymzvo4/IlSmvgmu1/postfriend.png' alt='konuyu-friend-ile-paylas' /></a><a href='https://www.facebook.com/sharer.php?u={Permalink}'><img src='http://static.tumblr.com/lymzvo4/LbRmvgmud/postface.png' alt='konuyu-facebook-ile-paylas' /></a><a href='https://twitter.com/intent/tweet?url={Permalink}'><img src='http://static.tumblr.com/lymzvo4/JWAmvgmv1/posttwit.png' alt='konuyu-twitter-ile-paylas' /></a>");
+
+	});
+	</script>
+
+	</div>
+	<!-- wrap end -->
+	<nav class="pagination">
+	<ul>
+		{block:Pagination}
+			{block:PreviousPage}
+				<li><a href="{PreviousPage}" class="pageNumber">Previous</a></li>
+			{/block:PreviousPage}
+
+			{block:JumpPagination length="5"}
+				{block:CurrentPage}
+					<li><span class="pageNumber currentPage">{PageNumber}</span></li>
+				{/block:CurrentPage}
+
+				{block:JumpPage}
+					<li><a class="pageNumber jumgPage" href="{URL}">{PageNumber}</a></li>
+				{/block:JumpPage}
+			{/block:JumpPagination}
+
+			{block:NextPage}
+				<li><a href="{NextPage}" class="pageNumber">Next</a></li>
+			{/block:NextPage}
+		{/block:Pagination}
+	</ul>
+	</nav>
+
+	</div>
+	<!-- content end ->
+</section>
+
+  <!-- DuhaTemaFooter Alanı -->
+  
+<footer class="overflowHid">
+	<div class="footerWrap">
+
+		<div class="footerSec">
+			<span>Most recent entries</span>
+			{block:Posts}
+				{block:Odd} 
+					{block:Text}
+						<div class="randomPost">
+							{Body}
+						</div>
+						<a href="{Permalink}" class="permalink">
+							<span class="readMore">read more</span>
+						</a>
+					{/block:Text} 
+
+					{block:link}
+						<div class="randomPost">
+							<p>{Name}</p>
+						</div>
+						<a href="{Permalink}" class="permalink"><span class="readMore">read more</span></a>
+					{/block:link} 
+				{/block:Odd}
+			{/block:Posts}
+		</div>
+
+		<div class="footerSec">
+			{block:Twitter}
+				<div id="twitter" style="display:none;">
+					<span>
+						<a href="https://twitter.com/{bulutuzer}">
+							Latest Tweets
+						</a>
+					</span>
+					<div id="tweets"></div>
+				</div>
+
+				<script type="text/javascript">
+					function recent_tweets(data) {
+						for (i=0; i<2; i++) {
+							document.getElementById("tweets").innerHTML =
+								document.getElementById("tweets").innerHTML +
+								'<p>' + data[i].text +
+								'</p>';
+						}
+						document.getElementById("twitter").style.display = 'block';
+					}
+				</script>
+			{/block:Twitter}
+
+			{block:Twitter}
+				<script type="text/javascript" src="/tweets.js"></script>
+			{/block:Twitter}
+		</div>
+		
+		<div class="footerPhoto">
+			<span>Popular Photos</span>
+				<ul class="popPhoto">
+				{block:Posts}
+					{block:Even} 
+						{block:Photo}
+							<li><a href="{Permalink}"><img src="{PhotoURL-100}" alt="{PhotoAlt}"/></a></li>
+						{/block:Photo}
+					{/block:Even}        
+				{/block:Posts}
+				</ul>
+		</div>
+		
+		<div class="tema"><span class="temaAd">FARUK</span><span class="temaSoyad">AKHAN</span></div>
+		<div class="tema"><a href="http://www.bulutuzer.com"><span class="temaAd">BULUT</span><span class="temaSoyad">ÜZER</span></a></div>
+		
+	</div>
+</footer>
+<!-- DuhaTemaFooter Alanı Son -->
+</body>
+</html>
